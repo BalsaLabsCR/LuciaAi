@@ -645,6 +645,104 @@ select {
   line-height: 1.6;
 }
 
+.site-footer__links {
+  display: inline-flex;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.site-footer__links a {
+  color: #41507d;
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
+.privacy-page {
+  width: min(100%, 980px);
+  margin: 0 auto;
+  padding: 28px 0 72px;
+}
+
+.privacy-hero,
+.privacy-card {
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  box-shadow: var(--shadow);
+  border-radius: 32px;
+}
+
+.privacy-hero {
+  padding: 34px 32px;
+}
+
+.privacy-hero h1 {
+  margin: 0;
+  font-family:
+    "Sora",
+    "Avenir Next",
+    "Trebuchet MS",
+    sans-serif;
+  font-size: clamp(2.3rem, 5vw, 4.1rem);
+  line-height: 0.98;
+}
+
+.privacy-hero p {
+  max-width: 70ch;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.privacy-updated {
+  margin-top: 18px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.privacy-card {
+  margin-top: 20px;
+  padding: 32px;
+}
+
+.privacy-intro {
+  margin: 0;
+  color: #33406c;
+  line-height: 1.75;
+  font-size: 1.02rem;
+}
+
+.privacy-sections {
+  display: grid;
+  gap: 28px;
+  margin-top: 28px;
+}
+
+.privacy-section {
+  padding-top: 24px;
+  border-top: 1px solid rgba(47, 60, 121, 0.08);
+}
+
+.privacy-section:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.privacy-section h2 {
+  margin: 0 0 12px;
+  font-family:
+    "Sora",
+    "Avenir Next",
+    "Trebuchet MS",
+    sans-serif;
+  font-size: 1.38rem;
+}
+
+.privacy-section p {
+  margin: 0 0 12px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
 @keyframes pulseDots {
   0%,
   80%,
@@ -736,6 +834,16 @@ select {
 
   .contact-card a {
     font-size: 1.45rem;
+  }
+
+  .privacy-hero,
+  .privacy-card {
+    border-radius: 24px;
+  }
+
+  .privacy-hero,
+  .privacy-card {
+    padding: 24px 20px;
   }
 }
 
